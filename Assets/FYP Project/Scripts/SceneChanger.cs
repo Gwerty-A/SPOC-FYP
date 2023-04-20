@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class SceneChanger : MonoBehaviour
 {
     public bool fadeOnStart = true;
-    public float fadeDuration = 2;
+    public float fadeDuration = 4;
     public Color fadeColor;
     public Image image;
 
@@ -16,7 +16,7 @@ public class SceneChanger : MonoBehaviour
         image = GetComponent<Image>();
         if (fadeOnStart)
             FadeIn();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(4);
         gameObject.active = false;
     }
 
